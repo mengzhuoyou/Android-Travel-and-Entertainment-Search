@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.janvierzz.hw9">
+    package="com.example.mengzhuy.hw9">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -42,7 +42,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.janvierzz.hw9.SearchResult" />
+                android:value="com.example.mengzhuy.hw9.SearchResult" />
         </activity>
     </application>
 
