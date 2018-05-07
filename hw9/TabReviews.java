@@ -1,4 +1,4 @@
-package com.example.janvierzz.hw9;
+package com.example.mengzhuy.hw9;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.janvierzz.hw9.dummy.DummyContent;
-import com.example.janvierzz.hw9.dummy.DummyContent.DummyItem;
+import com.example.mengzhuy.hw9.dummy.DummyContent;
+import com.example.mengzhuy.hw9.dummy.DummyContent.DummyItem;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
