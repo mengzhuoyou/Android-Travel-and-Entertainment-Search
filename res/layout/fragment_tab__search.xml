@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Tab_Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/keyword" />
+
+        <TextView
+            android:id="@+id/error_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_keyword"
+            android:textColor="@color/colorError"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/input_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/input_keyword"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category" />
+
+        <Spinner
+            android:id="@+id/input_category"
+            android:entries="@array/input_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/distance" />
+
+        <EditText
+            android:id="@+id/input_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/input_distance"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location" />
+
+        <RadioGroup
+            android:id="@+id/btn_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/btn_location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Current location"/>
+            <RadioButton
+                android:id="@+id/btn_location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Other. Specify location"/>
+
+            <TextView
+                android:id="@+id/error_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/error_location"
+                android:textColor="@color/colorError"
+                android:visibility="gone"
+                android:focusable="false"
+                android:layout_marginLeft="30dp"/>
+            <AutoCompleteTextView
+                android:id="@+id/input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/input_location"
+                android:focusable="false"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:completionThreshold="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:dropDownVerticalOffset="-70dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+</android.support.constraint.ConstraintLayout>

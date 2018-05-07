@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabPhoto">
+    <!--<ListView
+        android:id="@+id/photolist"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    </ListView>-->
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/photolist"
+        android:name="com.example.janvierzz.hw9.TabPhotos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".TabPhotos"
+        tools:listitem="@layout/fragment_tabphotos" />
+    <TextView
+        android:id="@+id/NoResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/NoResults"
+        android:gravity="center"
+        android:layout_weight="0"/>
+</FrameLayout>

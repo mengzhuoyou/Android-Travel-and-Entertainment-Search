@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabInfo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id = "@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id = "@+id/Address_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Address" />
+            <TextView
+                android:id = "@+id/Address_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tttttt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/Phone_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Phone Number" />
+
+            <TextView
+                android:autoLink="phone"
+                android:id="@+id/Phone_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <TextView
+                android:id = "@+id/Price_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Price Level" />
+            <TextView
+                android:id="@+id/Price_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/Rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <TextView
+                android:id = "@+id/Rating_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Rating" />
+
+            <RatingBar
+                android:isIndicator="true"
+                android:focusable="false"
+                android:id="@+id/Rating_c"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginLeft="-65dp"
+                android:layout_marginTop="-15dp"
+                android:layout_weight="0"
+                android:numStars="5"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/Google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <TextView
+                android:id = "@+id/Google_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Google Page" />
+            <TextView
+                android:autoLink="web"
+                android:id = "@+id/Google_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/Website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <TextView
+                android:id = "@+id/Website_t"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Website" />
+            <TextView
+                android:autoLink="web"
+                android:id = "@+id/Website_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SearchResult"
+    tools:showIn="@layout/activity_search_result">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/ListView_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+        </ListView>
+        <TextView
+            android:id="@+id/NoResults"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/NoResults"
+            android:gravity="center"
+            android:layout_weight="0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <Button
+                android:id="@+id/btn_pre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PREVIOUS"
+                android:visibility="visible" />
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/btn_next"
+                 android:layout_weight="1"
+                 android:text="NEXT"
+                 android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
