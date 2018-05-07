@@ -13,9 +13,10 @@ Java, XML and Android Studio for Android app development.
 4. res: These files include the layout of the app(.xml files) and all the necessary resources.
 
 ## Usage
-1. Keyword: pizza
-2. Category: Restaurant
-3. Distance: 10
-4. From: Current Location
+1. Recommend to run on the Virtual Devices: Nexus 5X API P. 
+2. Keyword: pizza
+3. Category: Restaurant
+4. Distance: 10
+5. From: Current Location
 
 Then click the search button, you will get the result tabs.
