@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 
-import static com.example.janvierzz.hw9.PlaceDetail.resultsyelp;
+import static com.example.mengzhuy.hw9.PlaceDetail.resultsyelp;
 
 public class DetailFunction {
     String place_id, address, phone, price, google, website, name, icon;
